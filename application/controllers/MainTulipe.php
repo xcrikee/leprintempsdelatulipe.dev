@@ -10,6 +10,7 @@ class MainTulipe extends MY_Controller {
         }
     public function index()
     {
-        $this->render('main/index', 'template/base/index');
+       //$this->render('main/index', 'template/base/index');
+          $this->render('template/base/map_footer', 'template/base/index');
     }
 }
