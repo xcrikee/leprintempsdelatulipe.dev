@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?= base_url('node_modules/bootstrap/dist/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <link rel="stylesheet" href="<?= base_url('node_modules/font-awesome/css/font-awesome.css') ?>">
+      <link rel="stylesheet" href="<?= base_url('assets/css/map.css') ?>">
    
 </head>
 <body>
