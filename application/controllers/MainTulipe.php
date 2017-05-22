@@ -7,9 +7,62 @@ class MainTulipe extends MY_Controller {
         //$this->load->model('');
         $this->load->helper('form'); 
         $this->load->library('session');
+        $this->load->library('form_validation');
         }
     public function index()
     {
         $this->render('main/index', 'template/base/index');
     }
-}
+public function contact(){
+		$this->render('main/contact');
+	}
+
+	public function contact_form(){
+		$this->form_validation->set_rules('nom', 'nom', 'trim|required|min_length[5]',array('required' => 'Votre %s est requis'));
+		$this->form_validation->set_rules('email', 'email', 'trim|required|valid_email',array('required' => 'Oups, il manque votre %s'));
+		$this->form_validation->set_rules('message', 'message', 'trim|required|min_length[5]',array('required' => 'Where is the %s, man?'));
+        if ($this->form_validation->run() == FALSE)
+                {
+        //sauvegarder la valeur de l'input dans l'input
+        $this->data['nom']=$this->input->post('nom');            
+        $this->data['message']=$this->input->post('message');            
+
+        $this->render('main/contact');
+                }
+                else
+                {
+			// récupérer les données
+			$nom = $this->input->post('nom');
+			$email = $this->input->post('email');
+			$message = $this->input->post('message');
+			// envoyer par email
+			$config['useragent']    = 'CodeIgniter';
+			$config['protocol']     = 'smtp';
+			$config['smtp_host']    = 'smtp.mailtrap.io';
+			$config['smtp_user']    = '3b0bc61feb61ed'; // Your gmail id
+			$config['smtp_pass']    = '90eb6f939f66c6'; // Your gmail Password
+			$config['smtp_port']    = 2525;
+			$config['wordwrap']     = TRUE;    
+			$config['wrapchars']    = 76;
+			$config['mailtype']     = 'html';
+			$config['charset']      = 'UTF-8';
+			$config['validate']     = FALSE;
+			$config['priority']     = 3;
+			$config['newline']      = "\r\n";
+			$config['crlf']         = "\r\n";
+
+			$this->load->library('email');
+			$this->email->initialize($config);
+
+			$this->email->from('lamjahdi.soumaya@gmail.com', 'TSS DEV');
+			$this->email->to('lamjahdi.soumaya@gmail.com'); 
+
+			$this->email->subject('Email Test');
+			$this->email->message($message);    
+
+			$this->email->send();
+			$this->render('main/formsuccess');
+                }
+
+		}
+	}
