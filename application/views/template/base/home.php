@@ -15,7 +15,13 @@
 </head>
 <body>
     
-<?php $this->load->view('template/base/nav'); ?>
+<div id="home">
+    <div id="welcome">
+        <div id="bg-welcome"></div>
+    </div>
+    <?php $this->load->view('template/base/nav'); ?>
+</div>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
 <div class= "container ctn-color">
 
