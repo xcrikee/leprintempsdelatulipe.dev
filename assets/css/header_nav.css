@@ -1,0 +1,50 @@
+#navbar{
+    height: 70px;
+    background-color: #0bc1ad;
+}
+
+#navbar .navbar{
+    background-color: #0bc1ad;
+    border: 0px;
+    padding-top: 12px;
+}
+
+#navbar div a{
+    color: white;
+}
+
+#home{
+    height: 100vh;
+}
+
+#bg-welcome{
+    background-image: url('../img/welcome.jpg');
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
+}
+
+.scrollToTop{
+	padding:10px; 
+	text-align:center; 
+	font-weight: bold;
+	text-decoration: none;
+	position:fixed;
+	bottom:60px;
+	right:60px;
+	display:none;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0bc1ad;
+}
+
+.scrollToTop:hover{
+	text-decoration:none;
+    cursor: pointer;
+}
+
+.fa{
+    color: #0bc1ad;
+    font-size: 25px;
+}
