@@ -4,7 +4,7 @@ class Events extends MY_Controller {
     public function __construct(){
         parent::__construct();
         $this->load->model("events_mdl");
-         $this->load->library('form_validation');
+         
 
         
        
