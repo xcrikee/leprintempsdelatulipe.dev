@@ -18,5 +18,38 @@ class events_mdl extends CI_Model {
        $query = $this->db->get_where($this->table, $where); 
        return $query;
     }
-  
+
+   public function create($eventname,$eventadress,$image,$lienevent,$description){
+         $data = array(
+            'nom' => $eventname,
+            'adresse' =>  $eventadress,
+            'image' => $image,
+            'description' => $description,
+            'lien' => $lienevent
+            ); 
+        $this->db->insert($this->table, $data);
+        }
+
+         public function modify($eventname,$eventadress,$image,$lienevent,$description,$id){
+         $data = array(
+               'nom' => $eventname,
+            'adresse' =>  $eventadress,
+            'image' => $image,
+            'description' => $description,
+            'lien' => $lienevent         
+           );
+           $this->db->where('id',$id);
+            $this->db->update($this->table,$data);
+     }
+
+   public function delete($id)
+          {
+                $data = array(
+               'deleted' => 1           
+           );
+             $this->db->where('id',$id);
+            $this->db->update($this->table,$data);
+        
+          }
+
 }
