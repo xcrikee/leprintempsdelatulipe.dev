@@ -31,7 +31,7 @@
                     <li><a href="<?=base_url('');?>">Create </a></li>
                     <li><a href="<?=base_url('');?>">Create Ref</a></li>
                     <li><a href="<?=base_url('');?>">Create session</a></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="<?=base_url('Don');?>">Don</a></li>
                 </ul>
             </li>
         </ul>
