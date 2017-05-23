@@ -12,7 +12,7 @@
                         <li><a href="<?php echo base_url();?>">Accueil</a></li>
                         <li><a href="#">Qui sommes-nous ?</a></li>
                         <li><a href="#">Nos activités</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="<?php echo base_url("maintulipe/contact");?>">Contact</a></li>
                         <li><a href="#">Nous aider ?</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->

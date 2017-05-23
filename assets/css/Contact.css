@@ -1,6 +1,21 @@
-.Sub-Btn{
-    padding-top:25px;
+.InputMessage{
+    margin-top:15px;
 }
 .Captcha{
     text-align: center;
+}
+.center-it > div{
+    margin: 15px auto;
+
+}
+
+ #map {
+  border-radius: 5px;
+  width: 100%;
+  height:400px;
+  background-color: grey;
+  
+ }
+.ContactRef{
+    margin:15px auto;
 }
