@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/header_nav.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/map.css') ?>">
-    <lgit coink rel="stylesheet" href="<?= base_url('assets/css/aboutus_style.css') ?>">
     <script src='https://www.google.com/recaptcha/api.js'></script>
-
+   
 </head>
 <body>
     
-<?php $this->load->view('template/base/nav'); ?>
+<div id="home">
+    <div id="welcome">
+        <div id="bg-welcome"></div>
+    </div>
+    <?php $this->load->view('template/base/nav'); ?>
+</div>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
 <div class= "container ctn-color">
 
