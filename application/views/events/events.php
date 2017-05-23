@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');?>
     <h1>Nos Evenements</h1>
-    <a href="<?php echo base_url(" Events/create ")?>" class="btn btn-primary">Cree un Evenement</a>
+    
     <?php
     foreach($query->result() as $row){       
     ?>

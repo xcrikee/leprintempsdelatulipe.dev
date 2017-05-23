@@ -35,9 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
                 </div>
             </div>
         </div>
-     <a href="<?php echo base_url("Events/more/$row->id")?>" class="btn btn-primary">En savoir plus</a>
-     <a href="<?php echo base_url("Events/modify/$row->id")?>" class="btn btn-primary">Modifier</a>
-     <a href="<?php echo base_url("Events/delete/$row->id")?>" class="btn btn-danger">Supprimer</a>
+   
     
     </div>
     <?php 

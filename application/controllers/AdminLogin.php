@@ -6,8 +6,8 @@ class AdminLogin extends MY_Controller {
   {
     parent::__construct();
     
-    $this->load->model('admin_mdl');
-    
+    $this->load->model('admin_mdl','admin_mdl');
+    $this->load->model('events_mdl','events_mdl');
    
   }
 
@@ -15,7 +15,8 @@ class AdminLogin extends MY_Controller {
   {
     if($this->session->userdata('login') || $this->session->userdata('logged'))
     {
-      redirect('session/logged');
+      $this->data["adminDashboard"] = $this->events_mdl->get_where($where);
+      redirect('session/logged',$data);
     }
     else
     {
@@ -32,7 +33,10 @@ class AdminLogin extends MY_Controller {
       {
        //si bon id
        $data = array('login'=>$this->input->post('login'),'logged'=>TRUE);
+        $this->data["adminDashboard"] = $this->events_mdl->get_where();
+     
        $this->session->set_userdata($data);
+
        $this->render('session/logged');
       }
       else 
