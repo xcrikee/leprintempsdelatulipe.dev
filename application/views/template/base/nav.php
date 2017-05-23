@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="<?=base_url('session');?>">Register</a></li>
+            <li><a href="<?=base_url('AboutUs');?>">Qui sommes nous ? </a></li>
             <li class="active"><a href="<?=base_url('');?>">Login</a></li>
         </ul>
         <form class="navbar-form navbar-left" role="search">
