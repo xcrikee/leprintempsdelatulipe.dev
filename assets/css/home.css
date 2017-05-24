@@ -6,15 +6,6 @@
 padding-top: 35px;
 }
 
-h1{
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    font-weight: normal;
-    color: #0bc1ad;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
 .container>.row{
     margin-top: 70px;
 }

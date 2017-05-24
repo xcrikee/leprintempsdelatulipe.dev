@@ -2,7 +2,9 @@
     height: 70px;
     background-color: white;
 }
-
+p{
+    font-family: "Source"
+}
 #navbar .navbar{
     background-color: transparent;
     border: 0px;
@@ -50,7 +52,21 @@
     background-size: cover;
         margin-top: -2px;
 }
-
+h1{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: normal;
+    color: #0bc1ad;
+    margin-bottom: 50px;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #0bc1ad;
+    margin-bottom: 50px;
+    text-align: center;
+}
 /* DROPDOWN */
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
