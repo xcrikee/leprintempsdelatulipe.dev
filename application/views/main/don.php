@@ -2,7 +2,7 @@
 <!--formulaire de paiement paypal-->
 <div class="row">
 <div class="col-md-6">
-<h2>Aide financière</h2>
+<h4>Aide financière</h4>
 <p id='dontext'>Discours sur le don par paypal</p>
 <div class="don">
 <form id='paypal' action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -28,7 +28,7 @@
 <p id='donremerciement'>nous vous remercions pour votre don etc...</p>
 </div>
 <div class="col-md-6">
-<h2>Aide bénévole</h2>
+<h4>Aide bénévole</h4>
 <p>En tant qu'ASBL, nous avons toujours besoin de l'aide de bénévoles motivés. Si vous êtes intéressés, n'hésitez pas à nous envoyer un message par</p> 
 <button type="button" class="btn btn-default btn-center" id="ContactLink" href="<?php echo base_url("MainTulipe/contact");?>">ICI</button>
 </div>
