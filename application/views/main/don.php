@@ -1,4 +1,4 @@
-<h1 id='titredon'>Nous avons toujours besoin de votre aide</h1>
+<h2 id='titredon'>Nous avons toujours besoin de votre aide</h2>
 <!--formulaire de paiement paypal-->
 <div class="row">
 <div class="col-md-6">

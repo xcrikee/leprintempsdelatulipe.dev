@@ -51,5 +51,5 @@
 <div class="row aide text-center">
     <h1>Envie de nous aider ?</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perferendis unde odio pariatur porro, iusto error earum ipsam. Cupiditate debitis unde provident possimus non pariatur neque fuga, officia nulla commodi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque adipisci, totam. Ullam assumenda neque quae nihil error minus tempora rerum quis iste vero quidem sint a iusto perferendis, necessitatibus distinctio.</p>
-    <div class="btn-don"><a href="">Faire un don</a></div>
+    <div class="btn-don"><a href="<?php echo base_url("don");?>">Faire un don</a></div>
 </div>

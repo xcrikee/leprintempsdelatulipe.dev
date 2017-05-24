@@ -67,6 +67,12 @@ h2{
     margin-bottom: 50px;
     text-align: center;
 }
+h3, h4{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #0bc1ad;
+    margin-bottom: 25px;
+}
 /* DROPDOWN */
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
@@ -105,6 +111,7 @@ h2{
 /* RETOUR HAUT DE PAGE */
 
 .scrollToTop{
+    z-index: 999;
 	padding:10px; 
 	text-align:center; 
 	font-weight: bold;
