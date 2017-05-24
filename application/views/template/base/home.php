@@ -42,7 +42,48 @@
         </div>
     </div>
 
-    <?php $this->load->view('template/base/nav'); ?>
+        <nav id="navbar">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="<?php echo base_url();?>"><div id= "logoNav" class="logo_nav_couleurs"></div></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?php echo base_url("MainTulipe");?>">Accueil</a></li>
+                        <li><a href="<?php echo base_url("AboutUs");?>">Qui sommes-nous ?</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="link-activites">Nos activités <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Activités pour jeunes</li>
+                                <li class="divider"></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Jeunes/SoutienScolaire");?>">Soutien scolaire</a></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Jeunes/AteliersCEB");?>">Ateliers CEB</a></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Jeunes/SummerClasses");?>">Summer classes (prochainement)</a></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Jeunes/ActivitesEte");?>">Activités été (prochainement)</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Activités pour adultes</li>
+                                <li class="divider"></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Adultes/Alphabetisation");?>">Alphabétisation / FLE</a></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Adultes/AteliersSante");?>">Ateliers santé</a></li>
+                                <li><a class="dropdown-link" href="<?php echo base_url("Adultes/SoutienParents");?>">Soutien à la parentalité</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="<?php echo base_url("Events");?>">Evénements</a></li>
+                        <li><a href="<?php echo base_url("maintulipe/contact");?>">Contact</a></li>
+                        <li><a href="<?php echo base_url("don");?>">Nous aider ?</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            
+        </div>
+
+    </nav>
+
+
 </div>
 <a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
