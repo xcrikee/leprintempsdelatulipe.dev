@@ -18,17 +18,25 @@
     
 <div id="home">
     <div id="welcome">
-         <!--<div id="slider-1"></div>-->
         <div id="carousel-id" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item">
                     <img alt="First slide" src="<?php echo base_url('assets/img/home/slider1.jpg'); ?>">
+                    <div class="carousel-caption">
+                        <img src="<?php echo base_url('assets/img/logo_blanc_ailes.png'); ?>" alt="">
+                    </div>
                 </div>
                 <div class="item">
                     <img alt="Second slide" src="<?php echo base_url('assets/img/home/slider2.jpg'); ?>">
+                    <div class="carousel-caption">
+                        <img src="<?php echo base_url('assets/img/logo_blanc_ailes.png'); ?>" alt="">
+                    </div>
                 </div>
                 <div class="item active">
                     <img alt="Third slide" src="<?php echo base_url('assets/img/home/slider3.jpg'); ?>">
+                    <div class="carousel-caption">
+                        <img src="<?php echo base_url('assets/img/logo_blanc_ailes.png'); ?>" alt="">
+                    </div>
                 </div>
             </div>
         </div>

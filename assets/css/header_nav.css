@@ -30,6 +30,28 @@ p{
 #home{
     height: 100vh;
 }
+
+/* LOGO NAV */
+
+.navbar-brand{
+    padding: 0px;
+}
+
+.logo_nav_couleurs{
+    background-image: url('../img/logo_couleurs.png');
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+        margin-top: -2px;
+}
+
+.logo_nav_blanc{
+    background-image: url('../img/logo_blanc_.png');
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+        margin-top: -2px;
+}
 h1{
     text-transform: uppercase;
     letter-spacing: 15px;
@@ -69,6 +91,15 @@ h2{
 .carousel-inner > .item > a > img {
     object-fit: cover;
     width: 100%;
+}
+
+.carousel-caption{
+    bottom: 30%;
+}
+
+.carousel-caption img{
+    width: 30%;
+    display: inline-block;
 }
 
 /* RETOUR HAUT DE PAGE */
