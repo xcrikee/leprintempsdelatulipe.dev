@@ -20,6 +20,7 @@
 <body>
     
 <?php $this->load->view('template/base/nav'); ?>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
 <div class= "container ctn-color">
 

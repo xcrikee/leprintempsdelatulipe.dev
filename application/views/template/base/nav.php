@@ -5,42 +5,30 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?php echo base_url();?>">Le Printemps de la Tulipe</a>
                 </div>
-
-<<<<<<< HEAD
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            <li><a href="<?=base_url('AboutUs');?>">Qui sommes nous ? </a></li>
-            <li class="active"><a href="<?=base_url('');?>">Login</a></li>
-        </ul>
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Film, réalisateur, etc...">
-            </div>
-            <button type="submit" class="btn btn-default">Go !</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?=base_url('');?>">Blog</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="<?=base_url('');?>">Create </a></li>
-                    <li><a href="<?=base_url('');?>">Create Ref</a></li>
-                    <li><a href="<?=base_url('');?>">Create session</a></li>
-                    <li><a href="<?=base_url('Don');?>">Don</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-    </div>
-</nav>
-=======
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="<?php echo base_url();?>">Accueil</a></li>
                         <li><a href="#">Qui sommes-nous ?</a></li>
-                        <li><a href="#">Nos activités</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="link-activites">Nos activités <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Activités pour jeunes</li>
+                                <li class="divider"></li>
+                                <li><a class="dropdown-link" href="#">Soutien scolaire</a></li>
+                                <li><a class="dropdown-link" href="#">Ateliers CEB</a></li>
+                                <li><a class="dropdown-link" href="#">Summer classes (prochainement)</a></li>
+                                <li><a class="dropdown-link" href="#">Activités été (prochainement)</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Activités pour adultes</li>
+                                <li class="divider"></li>
+                                <li><a class="dropdown-link" href="#">Alphabétisation / FLE</a></li>
+                                <li><a class="dropdown-link" href="#">Ateliers santé</a></li>
+                                <li><a class="dropdown-link" href="#">Soutien à la parentalité</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Evénements</a></li>
                         <li><a href="<?php echo base_url("maintulipe/contact");?>">Contact</a></li>
                         <li><a href="#">Nous aider ?</a></li>
                     </ul>
@@ -48,5 +36,6 @@
             </nav>
             
         </div>
+
     </nav>
->>>>>>> 34f71246f2a80b56bb5a963341a1c3cd161c6f8a
+
