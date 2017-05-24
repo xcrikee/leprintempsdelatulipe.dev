@@ -3,6 +3,7 @@ var monHeader = $('#welcome');
 var maPage = $('body');
 var headerHeight = $(window).height() - maNav.height();
 var imgCarousel = $('.carousel-inner > .item > img, .carousel-inner > .item > a > img');
+var logoNav = $('#logoNav');
 
 
 monHeader.css('height', headerHeight+'px');
@@ -20,9 +21,13 @@ $(window).scroll(function(){
     //window.onresize = resize();
     if(maPage.scrollTop() >= headerHeight){
         maNav.addClass('navbar-fixed-top');
+        logoNav.removeClass('logo_nav_couleurs');
+        logoNav.addClass('logo_nav_blanc');
     }
     else{
         maNav.removeClass('navbar-fixed-top');
+        logoNav.addClass('logo_nav_couleurs');
+        logoNav.removeClass('logo_nav_blanc');
     }
 });
 
