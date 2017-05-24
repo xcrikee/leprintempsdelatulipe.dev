@@ -1,6 +1,9 @@
-<h1 id='titredon'>Nous faire un don</h1>
-<p id='dontext'>Discours sur le don par paypal</p>
+<h1 id='titredon'>Nous avons toujours besoin de votre aide</h1>
 <!--formulaire de paiement paypal-->
+<div class="row">
+<div class="col-md-6">
+<h2>Aide financière</h2>
+<p id='dontext'>Discours sur le don par paypal</p>
 <div class="don">
 <form id='paypal' action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="lc" value="FR">
@@ -23,4 +26,12 @@
 <!--fin formulaire de paiement paypal-->
 <p id='donvirement'>petit texte sur le don par virement</p>
 <p id='donremerciement'>nous vous remercions pour votre don etc...</p>
+</div>
+<div class="col-md-6">
+<h2>Aide bénévole</h2>
+<p>En tant qu'ASBL, nous avons toujours besoin de l'aide de bénévoles motivés. Si vous êtes intéressés, n'hésitez pas à nous envoyer un message par</p> 
+<button type="button" class="btn btn-default btn-center" id="ContactLink" href="<?php echo base_url("MainTulipe/contact");?>">ICI</button>
+</div>
 
+
+</div>
