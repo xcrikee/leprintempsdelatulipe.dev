@@ -1,28 +1,61 @@
 #navbar{
     height: 70px;
-    background-color: #0bc1ad;
+    background-color: white;
 }
 
 #navbar .navbar{
-    background-color: #0bc1ad;
+    background-color: transparent;
     border: 0px;
     padding-top: 12px;
 }
 
 #navbar div a{
+    color: #0bc1ad;
+}
+
+#navbar.navbar-fixed-top{
+    background-color: #0bc1ad;
+}
+
+#navbar.navbar-fixed-top div a {
     color: white;
+}
+
+#navbar.navbar-fixed-top div a.dropdown-link{
+    color: #0bc1ad;
 }
 
 #home{
     height: 100vh;
 }
 
-#bg-welcome{
-    background-image: url('../img/welcome.jpg');
-    background-size: cover;
-    height: 100vh;
-    z-index: 0;
+/* DROPDOWN */
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: transparent;
 }
+
+.dropdown-menu{
+    width: 400px;
+}
+
+.dropdown-menu>li>a{
+    color: black;
+}
+
+.navbar-right .dropdown-menu{
+    right: -130px;
+}
+
+/* CAROUSEL */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* RETOUR HAUT DE PAGE */
 
 .scrollToTop{
 	padding:10px; 

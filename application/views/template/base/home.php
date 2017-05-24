@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/header_nav.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/home.css') ?>">
     <script src='https://www.google.com/recaptcha/api.js'></script>
    
 </head>
@@ -17,8 +18,22 @@
     
 <div id="home">
     <div id="welcome">
-        <div id="bg-welcome"></div>
+         <!--<div id="slider-1"></div>-->
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item">
+                    <img alt="First slide" src="<?php echo base_url('assets/img/home/slider1.jpg'); ?>">
+                </div>
+                <div class="item">
+                    <img alt="Second slide" src="<?php echo base_url('assets/img/home/slider2.jpg'); ?>">
+                </div>
+                <div class="item active">
+                    <img alt="Third slide" src="<?php echo base_url('assets/img/home/slider3.jpg'); ?>">
+                </div>
+            </div>
+        </div>
     </div>
+
     <?php $this->load->view('template/base/nav'); ?>
 </div>
 <a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
@@ -33,6 +48,7 @@
 
 <script src=" <?= base_url('node_modules/jquery/dist/jquery.js') ?>"></script>
 <script src=" <?= base_url('node_modules/bootstrap/dist/js/bootstrap.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/home.js'); ?>"></script>
 <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 
 </body>

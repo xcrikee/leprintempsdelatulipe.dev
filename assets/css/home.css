@@ -1,0 +1,66 @@
+.home-img-circle{
+    width: 100px;
+}
+
+.objectifs p{
+padding-top: 35px;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: normal;
+    color: #0bc1ad;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container>.row{
+    margin-top: 70px;
+}
+
+.act-enf{
+    width: 418px;
+    height: 456px;
+    background-image: url('../img/home/act-enf2.jpg');
+    background-size: cover;
+    padding-top: 6%;
+}
+
+.act-ad{
+    width: 418px;
+    height: 456px;
+    background-image: url('../img/home/act-adulte.jpg');
+    background-size: cover;
+    padding-top: 6%;
+    
+}
+
+.projets a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.btn-don{
+    width: 50%;
+    margin: auto;
+    background-color: #f2d33d;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.btn-don a{
+        padding-top: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.btn-don a:hover{
+    text-decoration: none;
+    color: orange;
+    transition: color 0.5s;
+}

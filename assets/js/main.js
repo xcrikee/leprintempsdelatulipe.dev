@@ -1,27 +1,3 @@
-var maNav = $('#navbar');
-var monHeader = $('#welcome');
-var maPage = $('body');
-var headerHeight = $(window).height() - maNav.height();
-
-monHeader.css('height', headerHeight+'px');
-
-function resize(){
-    headerHeight = $(window).height() - maNav.height();
-    monHeader.css('height', headerHeight+'px');
-}
-
-$(window).resize(resize);
-
-$(window).scroll(function(){
-    //window.onresize = resize();
-    if(maPage.scrollTop() >= headerHeight){
-        maNav.addClass('navbar-fixed-top');
-    }
-    else{
-        maNav.removeClass('navbar-fixed-top');
-    }
-});
-
 $(window).scroll(function(){
 		if ($(this).scrollTop() > $(window).height()) {
 			$('.scrollToTop').fadeIn();
