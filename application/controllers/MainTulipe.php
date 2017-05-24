@@ -8,14 +8,15 @@ class MainTulipe extends MY_Controller {
         $this->load->helper('form'); 
         $this->load->library('session');
         $this->load->library('form_validation');
+		$this->load->helper('url');
         }
     public function index()
     {
         $this->render('main/index', 'template/base/home');
     }
-public function contact(){
-		$this->render('main/contact');
-	}
+	public function contact(){
+			$this->render('main/contact');
+		}
 
 	public function contact_form(){
 		$this->form_validation->set_rules('nom', 'nom', 'trim|required|min_length[5]',array('required' => 'Votre %s est requis'));
@@ -69,4 +70,26 @@ public function contact(){
                 }
 
 		}
+
+		public function newsletter(){
+			$this->load->model("newsletter_model");
+			$prenom = $this->input->post('newsletter_prenom');
+			$email = $this->input->post('newsletter_email');
+			$this->newsletter_model->subscribe($prenom, $email);
+			$this->data['inscription'] = true;
+			$this->render('main/newsletter', 'template/base/index');
+		}
+
+		/* generateur CSV */
+
+        function create_csv(){
+			$this->load->dbutil();
+			$this->load->helper('file');
+			$this->load->helper('download');
+			$query = $this->db->query("SELECT email FROM newsletter");
+			$delimiter = ",";
+			$newline = "\r\n";
+			$data = $this->dbutil->csv_from_result($query, $delimiter, $newline);
+			force_download('CSV_Report.csv', $data);
+        }
 	}
