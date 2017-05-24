@@ -5,7 +5,6 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?php echo base_url();?>">Le Printemps de la Tulipe</a>
                 </div>
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -30,11 +29,13 @@
                             </ul>
                         </li>
                         <li><a href="#">Evénements</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="<?php echo base_url("maintulipe/contact");?>">Contact</a></li>
                         <li><a href="#">Nous aider ?</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
             
         </div>
+
     </nav>
+

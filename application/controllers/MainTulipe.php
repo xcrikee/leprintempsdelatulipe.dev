@@ -4,7 +4,7 @@ class MainTulipe extends MY_Controller {
     public function __construct(){
         parent::__construct();
         // charge notre model
-        //$this->load->model('');
+        $this->load->model('contact_model');
         $this->load->helper('form'); 
         $this->load->library('session');
         $this->load->library('form_validation');
@@ -35,6 +35,10 @@ public function contact(){
 			$nom = $this->input->post('nom');
 			$email = $this->input->post('email');
 			$message = $this->input->post('message');
+
+				// mettre dans la BDD
+			$this->contact_model->contact_send($nom,$email,$message);
+
 			// envoyer par email
 			$config['useragent']    = 'CodeIgniter';
 			$config['protocol']     = 'smtp';
@@ -54,11 +58,11 @@ public function contact(){
 			$this->load->library('email');
 			$this->email->initialize($config);
 
-			$this->email->from('lamjahdi.soumaya@gmail.com', 'TSS DEV');
+			$this->email->from('3b0bc61feb61ed', 'TSS DEV');
 			$this->email->to('lamjahdi.soumaya@gmail.com'); 
 
-			$this->email->subject('Email Test');
-			$this->email->message($message);    
+			$this->email->subject('Message provenant du site web');
+			$this->email->message($nom, $email, $message);    
 
 			$this->email->send();
 			$this->render('main/formsuccess');
