@@ -1,4 +1,4 @@
-    <nav id="navbar">
+    <nav id="navbar" class="navbar-fixed-top">
         <div class="container">
             <nav class="navbar navbar-default" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
