@@ -15,5 +15,13 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lejeunejeanetc/leprintempsdelatulipe.dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lejeunejeanetc/leprintempsdelatulipe.dev/issues"
+  },
+  "homepage": "https://github.com/lejeunejeanetc/leprintempsdelatulipe.dev#readme"
 }
