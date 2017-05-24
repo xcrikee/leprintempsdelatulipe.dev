@@ -5,6 +5,7 @@ class Events extends MY_Controller {
     {
         parent::__construct();
         $this->load->model("events_mdl"); 
+        //$this->load->helper("date");
     }
     public function index()
     {
@@ -78,6 +79,4 @@ class Events extends MY_Controller {
          $this->render('events/delete');
           redirect('events','');
       }
-
-     
 }

@@ -1,12 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class events_mdl extends CI_Model {
-    private $table = "evenements";
+    private $table = "events";
     public function __construct(){
         parent::__construct();
          $this->load->database();
-         
-       
     }
 
     public function get_where($where=array()){
